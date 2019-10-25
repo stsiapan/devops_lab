@@ -1,12 +1,12 @@
 n = 15
-l = []
-for i in range(1, n+1):
+list1 = []
+for i in range(1, n + 1):
     if i % 3 == 0 and i % 5 == 0:
-        l.append('FizzBuzz')
+        list1.append('FizzBuzz')
     elif i % 3 == 0:
-        l.append('Fizz')
+        list1.append('Fizz')
     elif i % 5 == 0:
-        l.append('Buzz')
+        list1.append('Buzz')
     else:
-        l.append(i)
-print(l)
+        list1.append(i)
+print(list1)

@@ -1,9 +1,9 @@
-l = ["5", "2", "C", "D", "+"]
+list1 = ["5", "2", "C", "D", "+"]
 point = []
-lstep = l.index("C")
+lstep = list1.index("C")
 step = 1
-if l.__sizeof__() > 1 & l.__sizeof__() < 1000:
-    for i in l:
+if list1.__sizeof__() > 1 & list1.__sizeof__() < 1000:
+    for i in list1:
         if i == "C":
             point.pop()
             print("Operation {0}: The round {1}'s data is invalid. \
