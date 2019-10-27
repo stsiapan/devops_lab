@@ -1,9 +1,0 @@
-### Snapshot utility v0.1
-## Allows you to make snapshots in TXT or JSON format
-## To select the output format you must specify the parameters in the configuration file
-
-## How to install
-# copy files from the directory
-# run the pip install command. "
-# import a module using the import command
-# start python script
