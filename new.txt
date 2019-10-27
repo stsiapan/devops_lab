@@ -3,7 +3,7 @@
 ## To select the output format you must specify the parameters in the configuration file
 
 ## How to install
-# Copy files from the directory
-# Run command "pip install ."
-# Import a module using the import command
-# Start python script
+# copy files from the directory
+# run the pip install command. "
+# import a module using the import command
+# start python script
