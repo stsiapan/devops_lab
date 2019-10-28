@@ -16,8 +16,8 @@ args = parser.parse_args()
 username = args.admin[0]
 password = getpass.getpass()
 
-r = requests.get(link + args.userID[0] + '/' + args.repository[0] +
-                 '/' + 'pulls', auth=(username, password)).json()
+r = requests.get(link + args.userID[0] + '/' + args.repository[0] + '/' + 'pulls',
+                 auth=(username, password)).json()
 
 for i in args.name:
     if 'number' in i:
