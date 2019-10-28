@@ -35,12 +35,12 @@ class SystemData():
 
 
 count_of_interval = 0
-date = datetime.datetime.now()
 my_class = SystemData()
 ecount = 1
 my_list = []
 if "txt" in output:
     while count_of_interval < interval:
+        date = datetime.datetime.now()
         with open("out_of_data.txt", "a") as out:
             out.write(
                 'SNAPSHOT{0}: {1} : '
@@ -52,9 +52,10 @@ if "txt" in output:
                                         my_class.network()) + '\n')
         count_of_interval += 1
         ecount += 1
-    time.sleep(1)
+    time.sleep(300)
 elif "json" in output:
     while count_of_interval < interval:
+        date = datetime.datetime.now()
         my_list = {'SNAPSHOT': str(ecount),
                    'date = ': str(date),
                    'cpu = ': str(my_class.cpu()),
@@ -66,3 +67,4 @@ elif "json" in output:
             out.write('\n')
         count_of_interval += 1
         ecount += 1
+    time.sleep(300)
