@@ -1,11 +1,19 @@
-d = {'Harry': 37, 'Berry': 38, 'Tina': 36, 'Akriti': 41, 'Harsh': 39}
+new_dict = {}
 a = []
-for i in d.values():
+size = int(input('enter dict size: '))
+item = 0
+
+while item < size:
+    key = input('enter name: ')
+    value = int(input('enter value: '))
+    new_dict.update({key: value})
+    item += 1
+
+for i in new_dict.values():
     a.append(i)
-print(a)
 a.sort()
-print(a)
-for i, j in d.items():
+for i, j in new_dict.items():
     while a[1] == j or a[2] == j:
-        print(i, j)
+        print('student {} has value {}'.format(i, j))
         break
+print('dictionary = {} \nsort_list = {}'.format(new_dict, a))
