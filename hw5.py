@@ -8,8 +8,6 @@ import os, json, yaml, sys, pip
 list_of_modules = []
 for _ in freeze():
     list_of_modules.append(_)
-print(list_of_modules)
-print(os.environ['PYTHONPATH'])
 my_dict = {'version': python_version(),
            'python executable location ': sys.executable,
            'pip location': pip.__path__,
