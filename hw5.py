@@ -3,7 +3,11 @@
 from platform import python_version
 from pip._internal.operations.freeze import freeze
 from distutils.sysconfig import get_python_lib
-import os, json, yaml, sys, pip
+import os
+import json
+import yaml
+import sys
+import pip
 
 list_of_modules = []
 for _ in freeze():
