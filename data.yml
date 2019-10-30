@@ -1,0 +1,11 @@
+apache_vhosts:
+ - servername: www.test.by
+   documentroot: /test/www/bla
+   serveradmin: test_primer@foo.example.com
+   direc: /test/log/test/log
+
+ - servername: www.post.by
+   documentroot: /post/www/bla
+   serveradmin: post_primer@foo.example.com
+   direc: /post/log/test/log
+
